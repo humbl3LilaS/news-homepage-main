@@ -7,4 +7,9 @@
 
 
 // ********* Main page components *********//
-@use "component";
+// all components are imported via component/_index.scss
+@use  "component";
+
+
+// ********* Desktop Layout *********//
+@use "layout/desktop";
