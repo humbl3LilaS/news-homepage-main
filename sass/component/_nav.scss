@@ -35,11 +35,20 @@
     }
 
     &_items {
-      font-size: 18px;
+      font-size: 16px;
     }
 
-  }
+    &_link {
+      transition: color 0.3s ease;
+      font-weight: var.$fw-normal;
 
+      &:hover {
+        color: var.$c-primary--soft__red;
+      }
+    }
+
+
+  }
 
 
   #nav-btn {
