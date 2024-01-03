@@ -137,6 +137,70 @@ button:focus {
   background-image: url("../../assets/images/icon-menu-close.svg");
 }
 
+.section-hero {
+  padding-inline: 1rem;
+}
+
+.banner-container .banner {
+  aspect-ratio: 1;
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  background-image: url("../../assets/images/image-web-3-mobile.jpg");
+}
+.banner-container .heading-primary {
+  max-width: 450px;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.banner-container .hero-text {
+  max-width: 450px;
+  margin-bottom: 2rem;
+  font-size: 15px;
+  line-height: 1.5;
+  color: hsl(236, 13%, 42%);
+}
+.banner-container .hero-btn {
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  background: hsl(5, 85%, 63%);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(36, 100%, 99%);
+  letter-spacing: 0.5rem;
+}
+
+.news-container {
+  margin-block: 2rem;
+  padding: 1.5rem;
+  background-color: hsl(240, 100%, 5%);
+}
+.news-container .news-heading {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 800;
+  color: hsl(35, 77%, 62%);
+}
+.news-container .news-article:not(:last-of-type) {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+}
+.news-container .news-article__header {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 800;
+  color: hsl(233, 8%, 79%);
+}
+.news-container .news-article__summary {
+  margin-bottom: 2rem;
+  color: hsl(233, 8%, 79%);
+}
+
 @media screen and (min-width: 768px) {
   body {
     padding: clamp(2rem, 5vh, 4rem) clamp(2rem, 10vw, 16rem);
