@@ -18,8 +18,12 @@ $fz-para: 15px;
 
 // Spacing
 $mobile-padding_hz: 1rem;
-$mobile-vt-spacing: 2rem;
+$mobile-row-spacing: 2rem;
+$desktop-row-spacing: 4rem;
 $desktop-padding: 3rem 6rem;
 
 // responsive breakpoint
 $desktop-screen: 768px;
+
+// transition effect
+$ts-link : color 0.3s ease;

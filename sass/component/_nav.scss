@@ -39,7 +39,7 @@
     }
 
     &_link {
-      transition: color 0.3s ease;
+      transition: var.$ts-link;
       font-weight: var.$fw-normal;
 
       &:hover {
