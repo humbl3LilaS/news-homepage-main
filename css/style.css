@@ -212,6 +212,50 @@ button:focus {
   color: hsl(233, 8%, 79%);
 }
 
+.section-feature {
+  padding-inline: 1rem;
+  margin-bottom: 4rem;
+}
+
+.feature-article {
+  display: flex;
+  column-gap: 1rem;
+}
+.feature-article__image {
+  min-width: 140px;
+  max-width: 140px;
+}
+.feature-article__banner {
+  width: 100%;
+  height: 100%;
+}
+.feature-article__number {
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: hsl(233, 8%, 79%);
+}
+.feature-article__header {
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(240, 100%, 5%);
+}
+.feature-article__header:hover {
+  color: hsl(5, 85%, 63%);
+}
+.feature-article__summary {
+  line-height: 1.7;
+  color: hsl(233, 8%, 79%);
+}
+
+.feature-article:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   body {
     padding: clamp(2rem, 5vh, 4rem) clamp(2rem, 10vw, 16rem);
