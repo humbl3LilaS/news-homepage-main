@@ -7,6 +7,19 @@
 .nav {
   position: relative;
 
+  &[data-backdrop="true"]::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0, 100%, 1%, 0.8);
+    display: block;
+    z-index: 50;
+    transition: none;
+  }
+
 
   .nav-list {
     width: 50%;
@@ -32,6 +45,19 @@
 
     &[data-visible="true"] {
       transform: translateX(0);
+
+      //&::after {
+      //  content: "";
+      //  position: fixed;
+      //  top: 0;
+      //  left: 0;
+      //  width: 100vw;
+      //  height: 100vh;
+      //  background-color: hsl(0,0%,100%,0.5);
+      //  display: block;
+      //  z-index: 50;
+      //  transition: none;
+      //}
     }
 
     &_items {
@@ -53,24 +79,27 @@
 
   #nav-btn {
     position: absolute;
-    top: -2rem;
+    top: -2.5rem;
     right: 0;
 
     z-index: 9999;
 
 
-    width: 50px;
+    width: 40px;
     aspect-ratio: 2/2;
 
     background-image: url("../../assets/images/icon-menu.svg");
     background-repeat: no-repeat;
     background-color: inherit;
+    background-size: cover;
 
     cursor: pointer;
   }
 
   #nav-btn[aria-expanded='true'] {
     background-image: url("../../assets/images/icon-menu-close.svg");
+
+
   }
 }
 
