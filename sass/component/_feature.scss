@@ -1,0 +1,58 @@
+@use "../abstract/variable" as var;
+
+.section-feature {
+  padding-inline: var.$mobile-padding_hz;
+  margin-bottom: var.$desktop-row-spacing;
+}
+
+.feature-article {
+  $gap: 1rem;
+  display: flex;
+  column-gap: 1rem;
+
+  &__image {
+    min-width: 140px;
+    max-width: 140px;
+  }
+
+  &__banner {
+    width: 100%;
+    height: 100%;
+    max-height: 160px;
+  }
+
+  &__number {
+    margin-bottom: $gap;
+
+    display: inline-block;
+
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-weight: var.$fw-superBold;
+    color: var.$c-natural--grayish__blue;
+  }
+
+  &__header {
+    margin-bottom: $gap;
+
+    transition: var.$ts-link;
+
+    font-size: 18px;
+    font-weight: var.$fw-bold;
+    color: var.$c-natural-veryDarkGrayish__blue;
+    &:hover {
+      color: var.$c-primary--soft__red;
+    }
+  }
+
+  &__summary {
+    line-height: 1.7;
+
+    color: var.$c-natural--grayish__blue;;
+  }
+
+
+}
+.feature-article:not(:last-of-type) {
+  margin-bottom: var.$mobile-row-spacing;
+}
